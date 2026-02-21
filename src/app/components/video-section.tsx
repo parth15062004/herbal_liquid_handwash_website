@@ -32,24 +32,16 @@ export function VideoSection() {
           <div className="relative bg-gradient-to-br from-white to-[#F8F9FA] rounded-3xl p-4 shadow-2xl border border-[#D1E7DD]/30">
             <div className="relative aspect-video bg-[#1F2937] rounded-2xl overflow-hidden group">
               {/* YouTube Placeholder */}
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#0F5132] to-[#1F2937]">
-                <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 backdrop-blur-md rounded-full mb-4 group-hover:bg-white/30 transition-all duration-300">
-                    <Play className="size-10 text-white ml-1" />
-                  </div>
-                  <p className="text-white text-lg m-0">Video Coming Soon</p>
-                  <p className="text-white/60 text-sm m-0 mt-2">Laboratory demonstration recording</p>
-                </div>
+              <div className="relative aspect-video bg-[#1F2937] rounded-2xl overflow-hidden">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/UeYtr0SAf80"
+                  title="Herbal Hand Wash Making Process"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
               </div>
-
-              {/* You can replace the above div with actual YouTube embed when video is available:
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                title="Herbal Hand Wash Making Process"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              /> */}
             </div>
           </div>
 
@@ -72,7 +64,7 @@ export function VideoSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12"
           >
-            {[
+            {/*[
               { label: 'Duration', value: '15 min' },
               { label: 'Steps Shown', value: '10' },
               { label: 'Lab Location', value: 'MITAOE' },
@@ -85,7 +77,7 @@ export function VideoSection() {
                 <p className="text-2xl text-[#0F5132] mb-1 m-0">{stat.value}</p>
                 <p className="text-sm text-[#1F2937]/60 m-0">{stat.label}</p>
               </div>
-            ))}
+            ))*/}
           </motion.div>
         </motion.div>
       </div>
