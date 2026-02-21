@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+   base: '/herbal_liquid_handwash_website/',
   plugins: [
     // React and Tailwind plugins for styling and UI functionality
     react(),
